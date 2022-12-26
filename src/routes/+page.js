@@ -7,11 +7,11 @@ let loading = true;
 
 export async function load() {
     try {
-        const response1 = await fetch('https://api.consumet.org/meta/anilist/trending');
+        const response1 = await fetch('https://api.consumet.org/meta/anilist/trending?perPage=12');
         data1 = await response1.json();
         const response2 = await fetch('https://api.consumet.org/meta/anilist/recent-episodes');
         data2 = await response2.json();
-        const response3 = await fetch('https://api.consumet.org/meta/anilist/popular');
+        const response3 = await fetch('https://api.consumet.org/meta/anilist/popular?perPage=12');
         data3 = await response3.json();
 
 

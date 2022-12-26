@@ -5,6 +5,6 @@
 </script>
 
 <Navbar />
-<div class="slot mt-16 px-10 lg:px-20">
+<div class="slot mt-16 max-w-[]1690px">
 	<slot />
 </div>
