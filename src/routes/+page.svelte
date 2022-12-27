@@ -4,7 +4,7 @@
     export let data;
 </script>
 
-<!-- <Hero/> -->
+<Hero/>
 
 <Cardgroup title={'Trending'} animes = {data.data1.results}/>
 <Cardgroup title={'Recent'} animes = {data.data2.results.slice(0,12)}/>
