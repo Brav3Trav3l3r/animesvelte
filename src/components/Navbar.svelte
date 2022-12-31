@@ -1,12 +1,23 @@
 <script>
     import {styles} from '../styles/index'
     import Icon from '@iconify/svelte';
+
+    import { onMount } from 'svelte';
+
+  let scrollY = 0;
+
+  onMount(() => {
+    // Update the scrollY value when the user scrolls
+    window.addEventListener('scroll', () => {
+      scrollY = window.scrollY;
+    });
+  });
 </script>
 
-<nav class="text-baseline justify-between h-16 px-4 md:px-10 lg:px-20 fixed top-0 bg-black drop-shadow-2xl w-full flex items-center z-50">
+<nav class="{scrollY > 0 ? 'bg-black': 'bg-black/70 '} text-baseline justify-between h-16 px-4 md:px-10 lg:px-20 fixed top-0 drop-shadow-2xl w-full flex items-center z-50 ">
     <div class="topcontent flex items-center space-x-4 md:space-x-8">
         <Icon icon="gg:menu-left-alt" class={`${styles.navIcons}`}/>
-        <h1 class="{`${styles.primeColor}`} text-xl md:text-2xl font-semibold ">aniverse</h1>
+        <a href="/"><h1 class="text-purple-50 text-2xl md:text-3xl font-medium ">aniverse</h1></a>
     </div>
 
     <div class="itemsend flex items-center space-x-4 md:space-x-8">

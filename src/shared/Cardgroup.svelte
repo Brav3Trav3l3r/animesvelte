@@ -5,7 +5,7 @@
 	export let title;
 </script>
 
-<div class="cardgroup px-4 md:px-10 lg:px-20 mb-20">
+<div class="cardgroup px-4 md:px-10 lg:px-20 mt-28">
 	<div class="title mb-8 border-b-2 border-zinc-900 pb-2">
 		<h1 class='{`${styles.secTitle}`} '>{title}</h1>
 	</div>
