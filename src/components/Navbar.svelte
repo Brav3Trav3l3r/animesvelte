@@ -14,7 +14,7 @@
   });
 </script>
 
-<nav class="{scrollY > 0 ? 'bg-black': 'bg-black/70 '} text-baseline justify-between h-16 px-4 md:px-10 lg:px-20 fixed top-0 drop-shadow-2xl w-full flex items-center z-50 ">
+<nav class="{scrollY > 0 ? 'bg-black': 'bg-transparent '} text-baseline justify-between h-16 px-4 md:px-10 lg:px-20 fixed top-0 drop-shadow-2xl w-full flex items-center z-50 ">
     <div class="topcontent flex items-center space-x-4 md:space-x-8">
         <Icon icon="gg:menu-left-alt" class={`${styles.navIcons}`}/>
         <a href="/"><h1 class="text-purple-50 text-2xl md:text-3xl font-medium ">aniverse</h1></a>
@@ -22,7 +22,7 @@
 
     <div class="itemsend flex items-center space-x-4 md:space-x-8">
         <Icon icon="gg:search" class={`${styles.navIcons}`}/>
-        <div class="profile h-8 w-8 md:w-10 md:h-10 rounded-full ring-2 ring-purple-400/40 realtive truncate ">
+        <div class="profile w-10 h-10 rounded-full ring-2 ring-purple-400/40 realtive truncate ">
             <img src="./animeposter/eren.png" alt="profile" class="object-cover w-full h-full">
         </div>
     </div>

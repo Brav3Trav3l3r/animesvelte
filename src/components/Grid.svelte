@@ -23,7 +23,7 @@
 				<div
 					class="{`${styles.primeTitle}`}"
 				>
-					Bleach: Thousand Year Blood War
+					BLEACH: THOUSAND YEAR BLOOD AND WAR
 				</div>
 				<div class="info-group mt-4 tracking-wider text-purple-50/80 font-light">
 					Oct 12 <span class="text-purple-400">|</span> Fantasy Drama Action
