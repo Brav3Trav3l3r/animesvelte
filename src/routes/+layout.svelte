@@ -8,7 +8,7 @@
 	<img src="./animeposter/gr2.jpg" alt="background" class=" h-full w-full object-cover">
 </div> -->
 <Navbar />
-<div class="slot  ">
+<div class="slot ">
 	<slot />
 </div>
 

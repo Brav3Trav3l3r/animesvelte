@@ -10,7 +10,7 @@ export const styles = {
 
     primeColor: 'text-purple-400',
 
-    primeButton:'bg-purple-500 text-purple-50 flex-1 py-2  rounded font-semibold',
+    primeButton:'bg-purple-500 text-purple-50 px-6 flex-1 py-2  rounded font-semibold',
     secButton:'bg-purple-500/20 text-purple-300 px-6 flex-1 py-2  rounded font-semibold',
 
     group:''

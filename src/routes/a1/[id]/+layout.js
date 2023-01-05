@@ -5,11 +5,14 @@ import { tempAnime } from "./store";
 
 const anilist = new META.Anilist()
 
-export async function load({fetch,params}){
+export async function load({params}){
     const info = await anilist.fetchAnimeInfo(params.id)
-    tempAnime.set(info.episodes[0].id)
+    // tempAnime.set(info.episodes[0].id)
 
     return {
+        headers: {
+            'cache-control': 'public, max-age=3600'
+          },
         info    
     }
 }

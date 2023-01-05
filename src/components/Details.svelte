@@ -38,9 +38,9 @@
 					<h1 class="text-zinc-400 text-sm">Sudios</h1>
 					<h1>{@html detail.studios}</h1>
 				</div>
-				<div class="genres flex space-x-8">
+				<div class="genres flex space-x-8 ">
 					<h1 class="text-zinc-400 text-sm">Genres</h1>
-					<h1>{@html detail.genres}</h1>
+					<h1 class="line-clamp-1">{@html detail.genres}</h1>
 				</div>
 			</div>
 		</div>

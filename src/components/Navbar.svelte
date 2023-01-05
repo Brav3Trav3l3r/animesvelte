@@ -14,7 +14,7 @@
   });
 </script>
 
-<nav class="{scrollY > 0 ? 'bg-black': 'bg-transparent '} text-baseline justify-between h-16 px-4 md:px-10 lg:px-20 fixed top-0 drop-shadow-2xl w-full flex items-center z-50 ">
+<nav class="{scrollY > 0 ? 'bg-black/60 backdrop-blur': 'bg-transparent '} transition-colors  text-baseline justify-between h-16 px-4 md:px-10 lg:px-20 fixed top-0 drop-shadow-2xl w-full flex items-center z-50 ">
     <div class="topcontent flex items-center space-x-4 md:space-x-8">
         <Icon icon="gg:menu-left-alt" class={`${styles.navIcons}`}/>
         <a href="/"><h1 class="text-purple-50 text-2xl md:text-3xl font-medium ">aniverse</h1></a>
