@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="grid  realtive grid-cols-1 lg:grid-cols-2 grid-rows-5 lg:grid-rows-1 h-[100vh] lg:px-20 lg:pb-20 lg:gap-x-8 "
+	class="grid realtive grid-cols-1 lg:grid-cols-2 grid-rows-5 lg:grid-rows-1 h-[100vh] lg:px-20  lg:gap-x-8 "
 >
 	<div class="{`${styles.group}`} row-span-2 relative lg:h-[60%] flex items-center lg:mx-4 lg:self-center lg:rounded-md truncate ">
 		<img src="./animeposter/bleach.jpg" alt="poster" class="h-full w-full object-cover z-20" />

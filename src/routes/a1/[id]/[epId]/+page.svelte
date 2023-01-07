@@ -1,5 +1,7 @@
 <script>
-	import Video from '../../../../components/Video.svelte';    
+	import Video from '../../../../components/Video.svelte';   
+	import {episode} from './store' 
+	$: console.log($episode);
 	export let data
 	const info = data.info
 	let url = data.url
@@ -9,12 +11,15 @@
 </script>
 
 
-<div class="main mx-auto">
-
+<div class="main flex flex-col">
 	<Video {params} {url}/>
-	<div class="info mt-4">
-		<div class="image h-32 aspect-[2/3]">
+	<div class="info mt-4 px-2 flex">
+		<div class="image h-32 aspect-[2/3] hidden md:block">
 			<img src={info.image} alt="poster">
+		</div>
+		<div class="px-2">
+			<h1>{$episode.number}. {$episode.title}</h1>
+			<h1 class="text-zinc-200">{info.title.romaji}</h1>
 		</div>
 	</div>
 </div>

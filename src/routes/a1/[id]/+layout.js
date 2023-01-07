@@ -7,7 +7,6 @@ const anilist = new META.Anilist()
 
 export async function load({params}){
     const info = await anilist.fetchAnimeInfo(params.id)
-    // tempAnime.set(info.episodes[0].id)
 
     return {
         headers: {

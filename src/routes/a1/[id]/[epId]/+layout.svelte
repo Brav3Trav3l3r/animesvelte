@@ -1,31 +1,38 @@
 <script>
 	import { episode } from './store';
-	import { tempEpisode } from '../store';
-
+	$: console.log($episode);
 	export let data;
 	let info = data.info;
 </script>
 
-<div class="scrollbar-none">
-	<div class="scrollbar-auto:hover scrollbar-thumb-black scrollbar-track-grey-light">
-		<div class=" lg:fixed inset-0 mt-24 flex lg:flex-row flex-col ">
-			<div class="slot flex-1 mx-2 lg:mx-4 lg:overflow-y-scroll ">
-				<slot />
-			</div>
-			<div
-				class="aside h-96 lg:h-full mx-2 lg:mx-0 mt-8 lg:mt-0 lg:w-72 xl:w-96 p-2 overflow-y-scroll bg-zinc-900/40 "
-			>
-				<div class="episodes flex flex-col my-4 ">
-					{#each info.episodes as ep}
-						<a href={`/a1/${info.id}/${ep.id}`}
-							><div class="episode flex space-x-4 hover:bg-zinc-800/50 rounded p-2 px-4">
-								<h1>{ep.number}</h1>
-								<h1 class="line-clamp-1">{ep.title}</h1>
-							</div></a
-						>
-					{/each}
-				</div>
-			</div>
+
+<div class="main flex flex-col  pt-2 px-2 md:flex-row-reverse ">
+	<div class="video mt-16 md:flex-1 md:ml-80 md:px-16">
+		<slot />
+	</div>
+	<div class="aside w-full h-[600px] md:h-auto mt-16 md:mt-0 border-4 md:w-80 left-0 md:fixed top-16 bottom-0  overflow-hidden overflow-y-auto ">
+		 <div
+			class="episodes border flex flex-col p-2 "
+		>
+			{#each info.episodes as ep}
+				<a href={`/a1/${info.id}/${ep.id}`} on:click={() => episode.set(ep)}
+					><div class="ep hover:bg-zinc-900 py-2 px-2">
+						<h1>{ep.title}</h1>
+					</div></a
+				>
+			{/each}
 		</div>
 	</div>
 </div>
+
+
+<!-- <div class="sticky top-0 bg-black space-y-2 py-4 px-4">
+	<h1>Episodes</h1>
+	<div class="search ">
+		<input
+			type="text"
+			placeholder="Search for episodes"
+			class="px-4 py-1 bg-zinc-900 rounded-md place placeholder:text-sm "
+		/>
+	</div>
+</div> -->

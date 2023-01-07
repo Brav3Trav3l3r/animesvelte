@@ -1,17 +1,15 @@
 <script>
-	import Icon from '@iconify/svelte';
 	import {episode} from '../routes/a1/[id]/[epId]/store'
-	import {tempEpisode} from '../routes/a1/[id]/store'
+
 	import { styles } from '../styles/index';
 	export let detail;
 
 
 </script>
 
-<!-- http://127.0.0.1:5173/a1/watch/chainsaw-man-episode-1 -->
 
 <div class="info mx-2 relative ">
-	<a href={`/a1/${detail.id}/${detail.episodes[0].id}`}><div class="play fixed bottom-4 right-4 md:hidden">
+	<a href={`/a1/${detail.id}/${detail.episodes[0].id}`} on:click={()=> episode.set(detail.episodes[0])}><div class="play fixed bottom-4 right-4 md:hidden">
 		<iconify-icon icon="ic:round-play-circle" class="text-6xl text-purple-400" />
 	</div></a>
 

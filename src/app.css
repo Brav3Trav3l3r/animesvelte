@@ -11,5 +11,13 @@ html{
     @apply bg-black text-white    
 }
 
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: transparent ;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #F5F5F550;
+}
 
 

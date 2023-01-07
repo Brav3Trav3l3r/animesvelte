@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/line-clamp'),
-    require('@vidstack/player/tailwind.cjs')
+    require('@vidstack/player/tailwind.cjs'),
+    require('tailwind-scrollbar-hide')
   ]
 };

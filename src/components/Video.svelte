@@ -9,16 +9,15 @@
 	import { episode } from '../routes/a1/[id]/[epId]/store';
 </script>
 
-<div class="video lg:mr-4 aspect-video bg-zinc-800 ">
-	<vds-media class=" h-full w-full object-contain">
+<div class="video rounded-md aspect-video bg-zinc-800">
+	<!-- <vds-media class=" h-full w-full object-contain">
         
 		<vds-hls 
         class="h-full w-full "
 			controls		
 		>
 			<video class="" controls src={url} preload="none" />
-		</vds-hls>
-	</vds-media>
+		</vds-hls> -->
+	<!-- </vds-media> -->
 </div>
-<h1>{params}</h1>
-<!-- <h1>{url}</h1> -->
+
