@@ -1,12 +1,10 @@
 import { META } from "@consumet/extensions"
-import { episode } from "./[epId]/store"
-import { tempAnime } from "./store";
-
 
 const anilist = new META.Anilist()
 
 export async function load({params}){
     const info = await anilist.fetchAnimeInfo(params.id)
+    console.log(' fetched info ')
 
     return {
         headers: {

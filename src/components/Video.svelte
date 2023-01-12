@@ -6,7 +6,6 @@
 
 	export let params;
 	export let url;
-	import { episode } from '../routes/a1/[id]/[epId]/store';
 </script>
 
 <div class="video rounded-md aspect-video bg-zinc-800">

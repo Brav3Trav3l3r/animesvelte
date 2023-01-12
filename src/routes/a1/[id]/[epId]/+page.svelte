@@ -1,7 +1,5 @@
 <script>
 	import Video from '../../../../components/Video.svelte';   
-	import {episode} from './store' 
-	$: console.log($episode);
 	export let data
 	const info = data.info
 	let url = data.url
@@ -18,8 +16,8 @@
 			<img src={info.image} alt="poster">
 		</div>
 		<div class="px-2">
-			<h1>{$episode.number}. {$episode.title}</h1>
-			<h1 class="text-zinc-200">{info.title.romaji}</h1>
+			<!-- <h1>{$episode.number}. {$episode.title}</h1>
+			<h1 class="text-zinc-200">{info.title.romaji}</h1> -->
 		</div>
 	</div>
 </div>
