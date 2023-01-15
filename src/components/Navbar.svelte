@@ -14,10 +14,13 @@
   });
 </script>
 
-<nav class="{scrollY > 0 ? 'bg-black/60 backdrop-blur': 'bg-black/60 backdrop-blur'} transition-colors  text-baseline justify-between h-16 px-4 md:px-10 lg:px-20 fixed top-0 drop-shadow-2xl w-screen flex items-center z-50 ">
+<nav class="{scrollY > 0 ? 'bg-zinc-900 backdrop-blur': 'bg-black/50 backdrop-blur'} border-b-2 border-zinc-800 transition-colors  text-baseline justify-between h-16 px-4 md:px-10 xl:px-20 fixed top-0 drop-shadow-2xl w-screen flex items-center z-50 ">
     <div class="topcontent flex items-center space-x-4 md:space-x-8">
         <Icon icon="gg:menu-left-alt" class={`${styles.navIcons}`}/>
-        <a href="/"><h1 class="text-purple-50 text-2xl md:text-3xl font-medium ">aniverse</h1></a>
+        <div class="logo flex items-center space-x-4">
+          <iconify-icon icon="logos:moon"  class="text-3xl"></iconify-icon>
+          <a href="/"><h1 class="text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 to-zinc-600 text-2xl md:text-3xl font-medium ">aniverse</h1></a>
+        </div>
     </div>
 
     <div class="itemsend flex items-center space-x-4 md:space-x-8">

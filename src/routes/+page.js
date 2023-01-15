@@ -9,7 +9,7 @@ let data3;
 let error;
 let loading = true;
 
-export async function load({fetch}) {
+export async function load() {
     try {
 
         data1 = anilist.fetchTrendingAnime(null,18)
@@ -22,7 +22,11 @@ export async function load({fetch}) {
         error = e;
         loading = false;  
     }
+
+
+
     return{
+        
         data1,data2, data3
     }
 }

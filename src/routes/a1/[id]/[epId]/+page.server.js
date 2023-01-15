@@ -5,8 +5,6 @@ export async function load({params}){
     const data = await res.json()
     const tempurl = data.sources.filter(n=> n.quality === 'default')
     const url = tempurl[0].url
-    console.log('fetched urls')
-
 
     return{
         params: params.epId,

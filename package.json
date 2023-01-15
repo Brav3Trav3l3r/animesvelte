@@ -32,6 +32,8 @@
 		"hls.js": "^1.2.9",
 		"lit": "^2.5.0",
 		"shaka-player": "^4.3.2",
+		"svelte-carousel": "^1.0.20",
+		"swiper": "^8.4.5",
 		"tailwind-scrollbar-hide": "^1.1.7"
 	}
 }
