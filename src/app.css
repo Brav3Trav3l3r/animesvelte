@@ -8,16 +8,19 @@
 
 
 html{
-    @apply bg-black text-white    
+    @apply bg-black text-white   
 }
 
 body::-webkit-scrollbar {
-  width: 0.5em;
-  background-color: transparent ;
+  /* display: none; */
+  width: 12px;
+  height: 12px;
 }
- 
+body::-webkit-scrollbar-track {
+  background: rgba(171, 125, 226, 0.2);
+}
 body::-webkit-scrollbar-thumb {
-  background-color: #F5F5F550;
+  background: #593e74;
 }
 
 

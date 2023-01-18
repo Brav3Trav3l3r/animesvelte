@@ -3,31 +3,26 @@ import { META } from "@consumet/extensions"
 
 const anilist = new META.Anilist()
 
-let data1;
-let data2;
-let data3;
-let error;
-let loading = true;
-
 export async function load() {
-    try {
-
-        data1 = anilist.fetchTrendingAnime(null,18)
-        data2 = anilist.fetchRecentEpisodes(null,12)
-        data3 = anilist.fetchPopularAnime(null,18)
-
-
-        loading = false;
-    } catch (e) {
-        error = e;
-        loading = false;  
-    }
-
-
+   
+        const fdata1 = async()=>{
+            const trenddata = anilist.fetchTrendingAnime(null,18)
+            return trenddata
+        }
+        const fdata2 = async()=>{
+            const recentdata = anilist.fetchRecentEpisodes(null,12)
+            return recentdata
+        }
+        const fdata3 = async()=>{
+            const popdata = anilist.fetchPopularAnime(null,18)
+            return popdata
+        }
 
     return{
         
-        data1,data2, data3
+        data1: fdata1(),
+        data2: fdata2(),
+        data3: fdata3()
     }
 }
 

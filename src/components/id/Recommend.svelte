@@ -1,11 +1,4 @@
 <script>
-	import { Swiper, SwiperSlide } from 'swiper/svelte';
-
-	// Import Swiper styles
-	import 'swiper/css';
-
-	import 'swiper/css/pagination';
-	import Carousel from 'svelte-carousel';
 	import Card from '../../shared/Card.svelte';
 	export let detail;
 	let recommend;
