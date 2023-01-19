@@ -1,7 +1,7 @@
 export const styles = {
-    navIcons : 'text-xl md:text-2xl text-zinc-100/50  hover:bg-zinc-800/40 box-content rounded-md p-2 ',
+    navIcons : 'text-xl md:text-2xl text-zinc-100/50 cursor-pointer hover:bg-zinc-800/40 box-content rounded-md p-2 ',
     primeTitle: 'heading text-4xl xl:text-6xl md:text-5xl  tracking-wide text-purple-50 border-b border-purple-50/50 pb-6 ',
-    secTitle:  'text-xl md:text-2xl font-medium tracking-wide text-zinc-400',
+    secTitle:  'text-xl md:text-2xl tracking-wide text-white',
     triTitle: 'text-purple-100/80 text-sm md:text-base line-clamp-1',
 
     

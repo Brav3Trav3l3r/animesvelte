@@ -12,7 +12,7 @@
 			{#each info.episodes as ep}
 				<a href={`/a1/${info.id}/${ep.id}`} on:click={()=> currentEp.set(ep.id)}
 					><div 
-						class="ep {ep.id === $currentEp ? 'text-purple-400 hover:bg-purple-500/10 border-l-4 border-purple-400 px-4' :  'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-700/20 px-2 rounded-md' }    
+						class="ep {ep.id === $currentEp ? 'text-purple-400 hover:bg-purple-500/10 border-l-4 border-purple-400 px-4' :  'text-zinc-400 text-sm hover:text-white hover:bg-zinc-700/20 px-2 rounded-md ' }    
                         py-2 flex space-x-4 items-baseline"
 					>
 						<h1 class="md:text-lg">{ep.number}</h1>

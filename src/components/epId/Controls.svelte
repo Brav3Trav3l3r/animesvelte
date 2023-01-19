@@ -2,6 +2,8 @@
     import { onMount } from "svelte";
 	import { goto } from '$app/navigation';
     import {currentEp, currentIndex} from '../../store/store'
+
+    import Tooltip from "../../shared/Tooltip.svelte";
     
     export let info
     let eps 
@@ -35,10 +37,10 @@
 <div class="fixed h-16 lg:ml-96 inset-x-0 bg-zinc-900 border-t border-zinc-700/80 bottom-0 grid grid-cols-2 lg:grid-cols-3 px-4 ">
 		
     <div class="episodes hidden lg:flex flex-col justify-center overflow-hidden">
-        <div class="episode flex space-x-2 ">
-        
+        <div class="episode flex space-x-2 group ">    
             <h1 class="text-purple-400 font-bold ">{eps[$currentIndex].number}</h1>
-            <h1 class="text-zinc-100 line-clamp-1">{eps[$currentIndex].title}</h1>
+            <h1 class="text-zinc-100 line-clamp-1 cursor-pointer">{eps[$currentIndex].title}</h1>
+
         </div>
         <a href={`/a1/${info.id}`}  class="cursor-pointer hover:underline underline-offset-2 text-zinc-400 text-sm line-clamp-1">{info.title.english?info.title.english:info.title.romaji }</a>
     </div>

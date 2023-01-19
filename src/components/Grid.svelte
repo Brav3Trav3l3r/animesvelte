@@ -3,11 +3,11 @@
 </script>
 
 <div
-	class="grid realtive grid-cols-1 lg:grid-cols-2 grid-rows-5 lg:grid-rows-1 h-[100vh] lg:px-20  lg:gap-x-8 "
+	class="grid realtive bg-gradient-radial from-red-900/60 to-transparent grid-cols-1 lg:grid-cols-2 grid-rows-5 lg:grid-rows-1 h-[100vh] lg:px-20  lg:gap-x-8 "
 >
 	<div class="{`${styles.group}`} row-span-2 relative lg:h-[50%] flex items-center lg:mx-4 lg:self-center lg:rounded-md truncate mt-16 lg:mt-0">
 		<img src="./animeposter/bleach.jpg" alt="poster" class="h-full w-full object-cover z-20" />
-		<!-- <div class="bg-purple-400 absolute inset-0 blur-lg hidden lg:inline-block" /> -->
+		<div class="bg-purple-400 absolute inset-0 blur-lg hidden lg:inline-block" />
 		<div
 			class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0 lg:hidden z-30"
 		/>
